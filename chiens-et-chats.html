@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THIRAMIN · Chiens et Chats</title>
+<meta name="description" content="Chiens et Chats par THIRAMIN : un volume pour chaque race, 344 races de chiens et 65 races de chats, et le portrait sur mesure de votre compagnon.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231E3B2C'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' fill='%23F8F5EF' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..600&family=Jost:wght@400;500&display=swap">
+<style>
+body{margin:0;background:#F8F5EF}
+a{color:#121212}a:hover{color:#5F594F}
+html{scroll-behavior:smooth}
+input::placeholder{color:#8A8378}
+.tab{background:transparent;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:0 0 14px;cursor:pointer;font-family:'Bodoni Moda',serif;font-weight:400;font-size:clamp(30px,3.4vw,44px);color:#8A8378;display:inline-flex;align-items:baseline;gap:10px;min-height:44px}
+.tab[aria-pressed="true"]{color:#121212;border-bottom-color:#121212}
+.tab small{font-family:'Jost',sans-serif;font-size:13px;letter-spacing:.12em}
+.chip{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border:1px solid #121212;border-radius:0;background:transparent;color:#121212;font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;cursor:pointer}
+.chip span{color:#6B655C;letter-spacing:.04em}
+.chip[aria-pressed="true"]{background:#121212;color:#F8F5EF}
+.chip[aria-pressed="true"] span{color:#C9C2B6}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(46%,190px),1fr));gap:40px 20px}
+.card{display:flex;flex-direction:column;gap:12px}
+.cover{position:relative;container-type:inline-size;aspect-ratio:3/4;color:#D8BF8A;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;padding:11% 9%;box-sizing:border-box}
+.cover::before{content:"";position:absolute;inset:7px;border:1px solid rgba(216,191,138,.45)}
+.cover .m{font-size:10px;letter-spacing:.34em;padding-left:.34em;text-transform:uppercase;font-weight:500}
+.cover .n{font-family:'Bodoni Moda',serif;font-weight:400;line-height:1.1}
+.cover .t{font-size:10px;letter-spacing:.26em;padding-left:.26em;text-transform:uppercase;font-weight:500}
+.card h3{margin:0;font-family:'Bodoni Moda',serif;font-weight:400;font-size:18px;line-height:1.25}
+.card p{margin:0;font-size:12px;line-height:1.5;color:#6B655C}
+.card .row{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:auto}
+.link{color:#121212;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;text-decoration:underline;text-underline-offset:5px;display:inline-flex;align-items:center;min-height:44px}
+.plain{background:transparent;border:0;cursor:pointer;min-height:44px;padding:0 4px;font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:#121212;text-decoration:underline;text-underline-offset:4px}
+</style>
+</head>
+<body>
+<div style="background: #F8F5EF; color: #121212; font-family: 'Jost', system-ui, sans-serif; font-weight: 400;">
+
+<div style="background: #121212; color: #F8F5EF; padding: 11px 24px; text-align: center; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; font-weight: 500;">Nouvelle collection · Chiens et chats, toutes les races</div>
+
+<header style="background: #F8F5EF; border-bottom: 1px solid #DDD6CA;">
+<div style="max-width: 1360px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px;">
+<nav aria-label="Navigation principale" style="flex: 1 1 280px; display: flex; flex-wrap: wrap; gap: 0 28px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500;">
+<a href="index.html#collection" style="color: #121212; text-decoration: none; display: inline-flex; align-items: center; min-height: 44px;">Collection</a>
+<a href="#catalogue" aria-current="page" style="color: #121212; text-decoration: underline; text-underline-offset: 6px; display: inline-flex; align-items: center; min-height: 44px;">Chiens &amp; Chats</a>
+<a href="index.html#objet" style="color: #121212; text-decoration: none; display: inline-flex; align-items: center; min-height: 44px;">L'objet</a>
+</nav>
+<a href="index.html" aria-label="THIRAMIN, accueil" style="flex: 0 0 auto; font-family: 'Bodoni Moda', serif; font-size: 32px; font-weight: 400; letter-spacing: 0.34em; padding-left: 0.34em; color: #121212; text-decoration: none; display: inline-flex; align-items: center; min-height: 56px;">THIRAMIN</a>
+<nav aria-label="Maison" style="flex: 1 1 280px; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 0 28px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500;">
+<a href="index.html#maison" style="color: #121212; text-decoration: none; display: inline-flex; align-items: center; min-height: 44px;">La Maison</a>
+<a href="index.html#pro" style="color: #121212; text-decoration: none; display: inline-flex; align-items: center; min-height: 44px;">Professionnels</a>
+<a href="#sur-mesure" style="color: #121212; text-decoration: none; display: inline-flex; align-items: center; min-height: 44px;">Sur mesure</a>
+</nav>
+</div>
+</header>
+
+<section style="padding: clamp(64px, 8vw, 120px) 24px clamp(56px, 7vw, 96px);">
+<div style="max-width: 1360px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 56px;">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+<p style="margin: 0; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 500; color: #1E3B2C;">Nouvelle collection</p>
+<h1 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(56px, 8vw, 120px); line-height: 0.95;">Chiens <span style="font-style: italic;">&amp;</span><br>Chats</h1>
+<p style="margin: 0; max-width: 480px; font-size: 16px; line-height: 1.8; color: #3D3A35;">Toutes les races, un volume pour chacune. 344 races de chiens reconnues par la Fédération cynologique internationale, 65 races de chats reconnues par le LOOF.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px;">
+<a href="#catalogue" data-go="chiens" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 32px; background: #121212; color: #F8F5EF; text-decoration: none; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500;">Les chiens</a>
+<a href="#catalogue" data-go="chats" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 32px; border: 1px solid #121212; color: #121212; text-decoration: none; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500;">Les chats</a>
+</div>
+</div>
+<div id="shelf" aria-hidden="true" style="flex: 1 1 520px; min-width: 0; display: flex; justify-content: center; align-items: flex-end; gap: 5px; overflow: hidden; border-bottom: 1px solid #121212; padding: 0 8px;"></div>
+</div>
+</section>
+
+<section id="catalogue" style="background: #FFFFFF; border-top: 1px solid #DDD6CA;">
+<div style="max-width: 1360px; margin: 0 auto; padding: clamp(56px, 7vw, 96px) 24px clamp(88px, 10vw, 140px); display: flex; flex-direction: column; gap: 32px;">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; border-bottom: 1px solid #DDD6CA;">
+<div id="tabs" style="display: flex; flex-wrap: wrap; gap: 0 40px;"></div>
+<div style="flex: 0 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 6px; padding-bottom: 14px;">
+<label id="searchLabel" for="recherche" style="font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; font-weight: 500; color: #6B655C;">Rechercher une race</label>
+<div style="display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #121212;">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="1.4" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
+<input id="recherche" type="search" autocomplete="off" style="flex: 1 1 auto; min-width: 0; min-height: 44px; border: 0; border-radius: 0; background: transparent; padding: 0 4px; font-family: 'Jost', sans-serif; font-size: 15px; color: #121212;">
+<button id="clear" type="button" class="plain" hidden>Effacer</button>
+</div>
+</div>
+</div>
+<div id="chips" style="display: flex; flex-wrap: wrap; gap: 8px;"></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px;">
+<h2 id="resultTitle" style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(26px, 2.6vw, 34px); line-height: 1.2;"></h2>
+<p id="count" aria-live="polite" style="margin: 0; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500; color: #6B655C;"></p>
+</div>
+<div id="grid" class="grid"></div>
+<div id="empty" hidden style="padding: 64px 0; text-align: center; flex-direction: column; align-items: center; gap: 16px;">
+<p style="margin: 0; font-family: 'Bodoni Moda', serif; font-size: 26px;">Aucune race ne correspond à votre recherche.</p>
+<button id="clear2" type="button" class="plain">Effacer la recherche</button>
+</div>
+</div>
+</section>
+
+<section id="sur-mesure" style="background: #1E3B2C; color: #F8F5EF;">
+<div style="max-width: 1360px; margin: 0 auto; padding: clamp(88px, 10vw, 140px) 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 64px;">
+<div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 26px;">
+<p style="margin: 0; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 500;">Sur mesure</p>
+<h2 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(36px, 4.6vw, 64px); line-height: 1.05;">Le portrait <span style="font-style: italic;">de votre compagnon.</span></h2>
+<p style="margin: 0; max-width: 540px; font-size: 16px; line-height: 1.8; color: #EDE8DF;">Chaque race a son volume. Le vôtre portera un nom. Un photographe de la Maison réalise le portrait de votre chien ou de votre chat, puis nous composons un livre unique, numéroté 1/1, présenté dans son coffret.</p>
+<ol style="list-style: none; margin: 0; padding: 0; width: 100%; max-width: 540px; border-top: 1px solid rgba(248, 245, 239, 0.35);">
+<li style="display: flex; align-items: baseline; gap: 20px; padding: 18px 0; border-bottom: 1px solid rgba(248, 245, 239, 0.35);"><span style="font-family: 'Bodoni Moda', serif; font-size: 20px; min-width: 32px;">01</span><span style="font-size: 15px; line-height: 1.6;">La séance, chez vous ou en studio.</span></li>
+<li style="display: flex; align-items: baseline; gap: 20px; padding: 18px 0; border-bottom: 1px solid rgba(248, 245, 239, 0.35);"><span style="font-family: 'Bodoni Moda', serif; font-size: 20px; min-width: 32px;">02</span><span style="font-size: 15px; line-height: 1.6;">La sélection des images, avec vous.</span></li>
+<li style="display: flex; align-items: baseline; gap: 20px; padding: 18px 0; border-bottom: 1px solid rgba(248, 245, 239, 0.35);"><span style="font-family: 'Bodoni Moda', serif; font-size: 20px; min-width: 32px;">03</span><span style="font-size: 15px; line-height: 1.6;">Le livre, imprimé, relié et livré dans son coffret.</span></li>
+</ol>
+<span style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 32px; border: 1px solid #F8F5EF; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500;">Rendez-vous bientôt disponibles</span>
+</div>
+<div style="flex: 1 1 360px; min-width: 0; display: flex; justify-content: center;">
+<div aria-hidden="true" style="position: relative; container-type: inline-size; width: min(100%, 360px); aspect-ratio: 3 / 4; background: #F8F5EF; color: #1E3B2C; display: flex; flex-direction: column; align-items: center; justify-content: space-between; text-align: center; padding: 12% 10%; box-sizing: border-box; box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);">
+<span style="position: absolute; inset: 10px; border: 1px solid #1E3B2C; opacity: 0.4;"></span>
+<span style="font-size: 11px; letter-spacing: 0.34em; padding-left: 0.34em; text-transform: uppercase; font-weight: 500;">THIRAMIN</span>
+<span style="display: flex; flex-direction: column; align-items: center; gap: 4cqw;">
+<span style="font-family: 'Bodoni Moda', serif; font-style: italic; font-weight: 400; font-size: 13cqw; line-height: 1;">Votre compagnon</span>
+<span style="font-size: 11px; letter-spacing: 0.26em; text-transform: uppercase; font-weight: 500;">Portrait sur mesure</span>
+</span>
+<span style="font-size: 11px; letter-spacing: 0.26em; padding-left: 0.26em; text-transform: uppercase; font-weight: 500;">Exemplaire unique · 1/1</span>
+</div>
+</div>
+</div>
+</section>
+
+<footer style="background: #EEE8DE; border-top: 1px solid #DDD6CA;">
+<div style="max-width: 1360px; margin: 0 auto; padding: 56px 24px 32px; display: flex; flex-direction: column; gap: 32px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px;">
+<a href="index.html" style="font-family: 'Bodoni Moda', serif; font-size: 26px; letter-spacing: 0.34em; color: #121212; text-decoration: none; display: inline-flex; align-items: center; min-height: 44px;">THIRAMIN</a>
+<nav aria-label="Pied de page" style="display: flex; flex-wrap: wrap; gap: 0 32px; font-size: 13px;">
+<a href="index.html" style="color: #121212; text-decoration: none; display: inline-flex; align-items: center; min-height: 44px;">Accueil</a>
+<a href="#catalogue" style="color: #121212; text-decoration: none; display: inline-flex; align-items: center; min-height: 44px;">Catalogue des races</a>
+<a href="#sur-mesure" style="color: #121212; text-decoration: none; display: inline-flex; align-items: center; min-height: 44px;">Sur mesure</a>
+</nav>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; border-top: 1px solid #CFC6B6; padding-top: 20px; font-size: 12px; color: #5F594F;">
+<span>© 2026 THIRAMIN · Monaco</span>
+<span>Races de chiens : nomenclature FCI · Races de chats : LOOF</span>
+</div>
+</div>
+</footer>
+</div>
+
+<script>
+(function(){
+const norm = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const GROUPS = {1:["Bergers et bouviers","#1E3B2C"],2:["Pinschers, molosses, bouviers suisses","#5B1F27"],3:["Terriers","#7A4A23"],4:["Teckels","#4A3426"],5:["Spitz et types primitifs","#23324A"],6:["Chiens courants","#4B4325"],7:["Chiens d'arrêt","#3A2E42"],8:["Rapporteurs et chiens d'eau","#1F3A3D"],9:["Compagnie et agrément","#6B2E3A"],10:["Lévriers","#2B2B2B"]};
+const COATS = {court:["Poil court","#3B3F45"],long:["Poil long","#5A4632"],mixte:["Poil court ou long","#4A3B52"],rex:["Poil frisé","#6A4A2A"],nu:["Sans poil","#7A5A4A"]};
+const D = [
+["Berger allemand","Deutscher Schäferhund",1,"Allemagne"],["Kelpie australien","Australian Kelpie",1,"Australie"],["Berger belge","",1,"Belgique"],["Schipperke","",1,"Belgique"],["Berger croate","Hrvatski ovčar",1,"Croatie"],["Berger catalan","Gos d'atura català",1,"Espagne"],["Berger de Majorque","Ca de bestiar",1,"Espagne"],["Berger australien","Australian Shepherd",1,"États-Unis"],["Berger de Beauce","",1,"France"],["Berger de Brie","",1,"France"],["Berger de Picardie","",1,"France"],["Berger des Pyrénées à face rase","",1,"France"],["Berger des Pyrénées à poil long","",1,"France"],["Border Collie","",1,"Grande-Bretagne"],["Bobtail","Old English Sheepdog",1,"Grande-Bretagne"],["Berger des Shetland","Shetland Sheepdog",1,"Grande-Bretagne"],["Colley à poil court","Collie Smooth",1,"Grande-Bretagne"],["Colley à poil long","Collie Rough",1,"Grande-Bretagne"],["Colley barbu","Bearded Collie",1,"Grande-Bretagne"],["Komondor","",1,"Hongrie"],["Kuvasz","",1,"Hongrie"],["Mudi","",1,"Hongrie"],["Puli","",1,"Hongrie"],["Pumi","",1,"Hongrie"],["Berger bergamasque","Cane da pastore bergamasco",1,"Italie"],["Berger des Abruzzes et de la Maremme","Cane da pastore maremmano-abruzzese",1,"Italie"],["Berger hollandais","Hollandse Herdershond",1,"Pays-Bas"],["Chien-loup de Saarloos","Saarlooswolfhond",1,"Pays-Bas"],["Schapendoes néerlandais","Nederlandse Schapendoes",1,"Pays-Bas"],["Berger polonais de plaine","Polski Owczarek Nizinny",1,"Pologne"],["Berger polonais des Tatras","Polski Owczarek Podhalański",1,"Pologne"],["Berger de la Serra de Aires","Cão da Serra de Aires",1,"Portugal"],["Berger roumain de Mioritza","Ciobănesc Românesc Mioritic",1,"Roumanie"],["Berger roumain des Carpathes","Ciobănesc Românesc Carpatin",1,"Roumanie"],["Berger de Russie méridionale","Yuzhnorusskaya Ovcharka",1,"Russie"],["Tchouvatch slovaque","Slovenský čuvač",1,"Slovaquie"],["Berger blanc suisse","",1,"Suisse"],["Chien-loup tchécoslovaque","Československý vlčiak",1,"Tchécoslovaquie"],["Bouvier australien","Australian Cattle Dog",1,"Australie"],["Bouvier des Ardennes","",1,"Belgique"],["Bouvier des Flandres","Vlaamse Koehond",1,"Belgique, France"],["Welsh Corgi Cardigan","",1,"Grande-Bretagne"],["Welsh Corgi Pembroke","",1,"Grande-Bretagne"],
+["Affenpinscher","",2,"Allemagne"],["Dobermann","",2,"Allemagne"],["Pinscher allemand","Deutscher Pinscher",2,"Allemagne"],["Pinscher nain","Zwergpinscher",2,"Allemagne"],["Pinscher autrichien","Österreichischer Pinscher",2,"Autriche"],["Chien de ferme dano-suédois","Dansk-svensk gårdshund",2,"Danemark, Suède"],["Schnauzer","",2,"Allemagne"],["Schnauzer géant","Riesenschnauzer",2,"Allemagne"],["Schnauzer nain","Zwergschnauzer",2,"Allemagne"],["Smous des Pays-Bas","Hollandse Smoushond",2,"Pays-Bas"],["Terrier noir russe","Russkiy Tchiorny Terrier",2,"Russie"],["Boxer","Deutscher Boxer",2,"Allemagne"],["Dogue allemand","Deutsche Dogge",2,"Allemagne"],["Rottweiler","",2,"Allemagne"],["Dogue argentin","Dogo Argentino",2,"Argentine"],["Fila Brasileiro","",2,"Brésil"],["Shar Pei","",2,"Chine"],["Broholmer","",2,"Danemark"],["Dogue de Majorque","Perro dogo mallorquín",2,"Espagne"],["Presa Canario","",2,"Espagne"],["Dogue de Bordeaux","",2,"France"],["Bouledogue anglais","Bulldog",2,"Grande-Bretagne"],["Bullmastiff","",2,"Grande-Bretagne"],["Mastiff","",2,"Grande-Bretagne"],["Cane Corso","Cane Corso Italiano",2,"Italie"],["Mâtin napolitain","Mastino Napoletano",2,"Italie"],["Tosa","",2,"Japon"],["Fila de Saint-Miguel","Cão Fila de São Miguel",2,"Portugal"],["Cimarron uruguayen","Cimarrón Uruguayo",2,"Uruguay"],["Leonberg","Leonberger",2,"Allemagne"],["Hovawart","",2,"Allemagne"],["Landseer","",2,"Allemagne, Suisse"],["Tornjak","",2,"Bosnie-Herzégovine, Croatie"],["Terre-Neuve","Newfoundland",2,"Canada"],["Mâtin des Pyrénées","Mastín del Pirineo",2,"Espagne"],["Mâtin espagnol","Mastín español",2,"Espagne"],["Chien de montagne des Pyrénées","",2,"France"],["Berger de Charplanina","Šarplaninac",2,"Macédoine du Nord, Serbie"],["Chien de montagne de l'Atlas","Aïdi",2,"Maroc"],["Chien de Castro Laboreiro","Cão de Castro Laboreiro",2,"Portugal"],["Chien de la Serra da Estrela","Cão da Serra da Estrela",2,"Portugal"],["Rafeiro de l'Alentejo","Rafeiro do Alentejo",2,"Portugal"],["Berger roumain de Bucovine","Ciobănesc Românesc de Bucovina",2,"Roumanie"],["Berger d'Asie centrale","Sredneasiatskaya Ovtcharka",2,"Russie"],["Berger du Caucase","Kavkazskaïa Ovtcharka",2,"Russie"],["Berger du Karst","Kraški ovčar",2,"Slovénie"],["Saint-Bernard","St. Bernhardshund",2,"Suisse"],["Dogue du Tibet","Do-Khyi",2,"Tibet (Chine)"],["Berger kangal","Kangal Çoban Köpeği",2,"Turquie"],["Bouvier appenzellois","Appenzeller Sennenhund",2,"Suisse"],["Bouvier bernois","Berner Sennenhund",2,"Suisse"],["Bouvier de l'Entlebuch","Entlebucher Sennenhund",2,"Suisse"],["Grand bouvier suisse","Grosser Schweizer Sennenhund",2,"Suisse"],
+["Terrier de chasse allemand","Deutscher Jagdterrier",3,"Allemagne"],["Terrier brésilien","Terrier Brasileiro",3,"Brésil"],["Airedale Terrier","",3,"Grande-Bretagne"],["Border Terrier","",3,"Grande-Bretagne"],["Fox-terrier à poil lisse","Fox Terrier Smooth",3,"Grande-Bretagne"],["Fox-terrier à poil dur","Fox Terrier Wire",3,"Grande-Bretagne"],["Lakeland Terrier","",3,"Grande-Bretagne"],["Bedlington Terrier","",3,"Grande-Bretagne"],["Manchester Terrier","",3,"Grande-Bretagne"],["Parson Russell Terrier","",3,"Grande-Bretagne"],["Welsh Terrier","",3,"Grande-Bretagne"],["Terrier irlandais","Irish Terrier",3,"Irlande"],["Terrier irlandais à poil doux","Irish Soft Coated Wheaten Terrier",3,"Irlande"],["Terrier irlandais Glen of Imaal","Irish Glen of Imaal Terrier",3,"Irlande"],["Kerry Blue Terrier","",3,"Irlande"],["Terrier australien","Australian Terrier",3,"Australie"],["Cairn Terrier","",3,"Grande-Bretagne"],["Dandie Dinmont Terrier","",3,"Grande-Bretagne"],["Norfolk Terrier","",3,"Grande-Bretagne"],["Norwich Terrier","",3,"Grande-Bretagne"],["Sealyham Terrier","",3,"Grande-Bretagne"],["Skye Terrier","",3,"Grande-Bretagne"],["Scottish Terrier","",3,"Grande-Bretagne"],["Jack Russell Terrier","",3,"Grande-Bretagne"],["West Highland White Terrier","",3,"Grande-Bretagne"],["Terrier japonais","Nihon Teria",3,"Japon"],["Terrier tchèque","Český teriér",3,"République tchèque"],["American Staffordshire Terrier","",3,"États-Unis"],["Bull Terrier","",3,"Grande-Bretagne"],["Bull Terrier miniature","Miniature Bull Terrier",3,"Grande-Bretagne"],["Staffordshire Bull Terrier","",3,"Grande-Bretagne"],["Silky Terrier","Australian Silky Terrier",3,"Australie"],["English Toy Terrier","",3,"Grande-Bretagne"],["Yorkshire Terrier","",3,"Grande-Bretagne"],
+["Teckel","Dachshund",4,"Allemagne"],
+["Chien esquimau canadien","Canadian Eskimo Dog",5,"Canada"],["Husky de Sibérie","Siberian Husky",5,"États-Unis"],["Malamute de l'Alaska","Alaskan Malamute",5,"États-Unis"],["Chien du Groenland","Grønlandshund",5,"Groenland"],["Samoyède","Samoiedskaïa Sabaka",5,"Russie du Nord, Sibérie"],["Chien d'ours de Carélie","Karjalankarhukoira",5,"Finlande"],["Spitz finlandais","Suomenpystykorva",5,"Finlande"],["Chien d'élan norvégien gris","Norsk Elghund Grå",5,"Norvège"],["Chien d'élan norvégien noir","Norsk Elghund Sort",5,"Norvège"],["Chien norvégien de macareux","Norsk Lundehund",5,"Norvège"],["Laïka de Sibérie occidentale","Zapadno-Sibirskaïa Laïka",5,"Russie"],["Laïka de Sibérie orientale","Vostotchno-Sibirskaïa Laïka",5,"Russie"],["Laïka russo-européen","Russko-Evropeïskaïa Laïka",5,"Russie"],["Chien d'élan suédois","Jämthund",5,"Suède"],["Spitz de Norrbotten","Norrbottenspets",5,"Suède"],["Berger finnois de Laponie","Lapinporokoira",5,"Finlande"],["Chien finnois de Laponie","Suomenlapinkoira",5,"Finlande"],["Chien de berger islandais","Íslenskur fjárhundur",5,"Islande"],["Buhund norvégien","Norsk Buhund",5,"Norvège"],["Lapphund suédois","Svensk Lapphund",5,"Suède"],["Vallhund suédois","Västgötaspets",5,"Suède"],["Spitz allemand","Deutscher Spitz",5,"Allemagne"],["Volpino italien","Volpino Italiano",5,"Italie"],["Eurasier","",5,"Allemagne"],["Chow Chow","",5,"Chine"],["Jindo coréen","Korea Jindo Dog",5,"Corée"],["Akita","",5,"Japon"],["Akita américain","American Akita",5,"Japon"],["Hokkaido","",5,"Japon"],["Kai","",5,"Japon"],["Kishu","",5,"Japon"],["Shiba","",5,"Japon"],["Shikoku","",5,"Japon"],["Spitz japonais","Nihon Supittsu",5,"Japon"],["Bangkaew de Thaïlande","Thai Bangkaew Dog",5,"Thaïlande"],["Basenji","",5,"Afrique centrale"],["Chien de Canaan","Canaan Dog",5,"Israël"],["Chien du Pharaon","Pharaoh Hound",5,"Malte"],["Xoloitzcuintle","",5,"Mexique"],["Chien nu du Pérou","Perro sin pelo del Perú",5,"Pérou"],["Chien de garenne des Canaries","Podenco Canario",5,"Espagne"],["Podenco d'Ibiza","Podenco Ibicenco",5,"Espagne"],["Cirneco de l'Etna","Cirneco dell'Etna",5,"Italie"],["Chien de garenne portugais","Podengo Português",5,"Portugal"],["Chien de Taïwan","Taiwan Dog",5,"Taïwan"],["Chien thaïlandais à crête dorsale","Thai Ridgeback Dog",5,"Thaïlande"],
+["Chien de Saint-Hubert","",6,"Belgique"],["Pisteur brésilien","Rastreador Brasileiro",6,"Brésil"],["Foxhound américain","American Foxhound",6,"États-Unis"],["Black and Tan Coonhound","",6,"États-Unis"],["Billy","",6,"France"],["Français blanc et noir","",6,"France"],["Français blanc et orange","",6,"France"],["Français tricolore","",6,"France"],["Gascon saintongeois","",6,"France"],["Grand anglo-français blanc et orange","",6,"France"],["Grand anglo-français blanc et noir","",6,"France"],["Grand anglo-français tricolore","",6,"France"],["Grand bleu de Gascogne","",6,"France"],["Grand griffon vendéen","",6,"France"],["Poitevin","",6,"France"],["Chien à loutre","Otterhound",6,"Grande-Bretagne"],["Foxhound anglais","English Foxhound",6,"Grande-Bretagne"],["Brachet polonais","Ogar Polski",6,"Pologne"],["Brachet de Styrie à poil dur","Steirische Rauhhaarbracke",6,"Autriche"],["Brachet noir et feu","Brandlbracke",6,"Autriche"],["Brachet tyrolien","Tiroler Bracke",6,"Autriche"],["Chien courant de Bosnie à poil raide","Bosanski ostrodlaki gonič Barak",6,"Bosnie-Herzégovine"],["Chien courant de la vallée de la Save","Posavski gonič",6,"Croatie"],["Chien courant d'Istrie à poil dur","Istarski ostrodlaki gonič",6,"Croatie"],["Chien courant d'Istrie à poil ras","Istarski kratkodlaki gonič",6,"Croatie"],["Chien courant espagnol","Sabueso español",6,"Espagne"],["Chien courant finlandais","Suomenajokoira",6,"Finlande"],["Anglo-français de petite vénerie","",6,"France"],["Ariégeois","",6,"France"],["Beagle-Harrier","",6,"France"],["Briquet griffon vendéen","",6,"France"],["Chien d'Artois","",6,"France"],["Griffon bleu de Gascogne","",6,"France"],["Griffon fauve de Bretagne","",6,"France"],["Griffon nivernais","",6,"France"],["Petit bleu de Gascogne","",6,"France"],["Porcelaine","",6,"France"],["Harrier","",6,"Grande-Bretagne"],["Chien courant grec","Hellinikos Ichnilatis",6,"Grèce"],["Chien courant de Transylvanie","Erdélyi kopó",6,"Hongrie"],["Chien courant italien à poil dur","Segugio italiano a pelo forte",6,"Italie"],["Chien courant italien à poil ras","Segugio italiano a pelo raso",6,"Italie"],["Chien courant de montagne du Monténégro","Crnogorski planinski gonič",6,"Monténégro"],["Chien courant de Halden","Haldenstøver",6,"Norvège"],["Chien courant de Hygen","Hygenhund",6,"Norvège"],["Chien courant norvégien","Dunker",6,"Norvège"],["Chien courant polonais","Gończy polski",6,"Pologne"],["Chien courant serbe","Srpski gonič",6,"Serbie"],["Chien courant tricolore serbe","Srpski trobojni gonič",6,"Serbie"],["Chien courant slovaque","Slovenský kopov",6,"Slovaquie"],["Chien courant de Hamilton","Hamiltonstövare",6,"Suède"],["Chien courant de Schiller","Schillerstövare",6,"Suède"],["Chien courant du Småland","Smålandsstövare",6,"Suède"],["Chien courant suisse","Schweizer Laufhund",6,"Suisse"],["Basset de Westphalie","Westfälische Dachsbracke",6,"Allemagne"],["Brachet allemand","Deutsche Bracke",6,"Allemagne"],["Basset artésien normand","",6,"France"],["Basset bleu de Gascogne","",6,"France"],["Basset fauve de Bretagne","",6,"France"],["Grand basset griffon vendéen","",6,"France"],["Petit basset griffon vendéen","",6,"France"],["Basset Hound","",6,"Grande-Bretagne"],["Beagle","",6,"Grande-Bretagne"],["Drever","",6,"Suède"],["Petit chien courant suisse","Schweizer Niederlaufhund",6,"Suisse"],["Chien de recherche au sang de Hanovre","Hannoverscher Schweisshund",6,"Allemagne"],["Chien de rouge de Bavière","Bayerischer Gebirgsschweisshund",6,"Allemagne"],["Basset des Alpes","Alpenländische Dachsbracke",6,"Autriche"],["Rhodesian Ridgeback","",6,"Afrique du Sud"],["Dalmatien","Dalmatinski pas",6,"Croatie"],
+["Braque allemand à poil court","Deutsch Kurzhaar",7,"Allemagne"],["Braque de Weimar","Weimaraner",7,"Allemagne"],["Chien d'arrêt allemand à poil dur","Deutsch Drahthaar",7,"Allemagne"],["Chien d'arrêt allemand à poil raide","Deutsch Stichelhaar",7,"Allemagne"],["Pudelpointer","",7,"Allemagne"],["Chien d'arrêt danois ancestral","Gammel Dansk Hønsehund",7,"Danemark"],["Braque de Burgos","Perdiguero de Burgos",7,"Espagne"],["Braque d'Auvergne","",7,"France"],["Braque de l'Ariège","",7,"France"],["Braque du Bourbonnais","",7,"France"],["Braque français, type Gascogne","",7,"France"],["Braque français, type Pyrénées","",7,"France"],["Braque Saint-Germain","",7,"France"],["Braque hongrois à poil court","Rövidszőrű magyar vizsla",7,"Hongrie"],["Braque hongrois à poil dur","Drótszőrű magyar vizsla",7,"Hongrie"],["Braque italien","Bracco Italiano",7,"Italie"],["Chien d'arrêt portugais","Perdigueiro Português",7,"Portugal"],["Braque slovaque à poil dur","Slovenský hrubosrstý stavač",7,"Slovaquie"],["Chien d'arrêt allemand à poil long","Deutsch Langhaar",7,"Allemagne"],["Grand épagneul de Münster","Grosser Münsterländer",7,"Allemagne"],["Petit épagneul de Münster","Kleiner Münsterländer",7,"Allemagne"],["Épagneul bleu de Picardie","",7,"France"],["Épagneul breton","",7,"France"],["Épagneul de Pont-Audemer","",7,"France"],["Épagneul français","",7,"France"],["Épagneul picard","",7,"France"],["Chien d'arrêt frison","Stabijhoun",7,"Pays-Bas"],["Chien de perdrix de Drente","Drentsche Patrijshond",7,"Pays-Bas"],["Griffon à poil dur Korthals","",7,"France"],["Spinone","Spinone Italiano",7,"Italie"],["Barbu tchèque","Český fousek",7,"République tchèque"],["Pointer anglais","English Pointer",7,"Grande-Bretagne"],["Setter anglais","English Setter",7,"Grande-Bretagne"],["Setter Gordon","Gordon Setter",7,"Grande-Bretagne"],["Setter irlandais rouge","Irish Red Setter",7,"Irlande"],["Setter irlandais rouge et blanc","Irish Red and White Setter",7,"Irlande"],
+["Retriever de la Nouvelle-Écosse","Nova Scotia Duck Tolling Retriever",8,"Canada"],["Retriever de la baie de Chesapeake","Chesapeake Bay Retriever",8,"États-Unis"],["Golden Retriever","",8,"Grande-Bretagne"],["Retriever à poil bouclé","Curly Coated Retriever",8,"Grande-Bretagne"],["Retriever à poil plat","Flat Coated Retriever",8,"Grande-Bretagne"],["Labrador Retriever","",8,"Grande-Bretagne"],["Chien d'oysel allemand","Deutscher Wachtelhund",8,"Allemagne"],["Cocker américain","American Cocker Spaniel",8,"États-Unis"],["Clumber Spaniel","",8,"Grande-Bretagne"],["Cocker anglais","English Cocker Spaniel",8,"Grande-Bretagne"],["English Springer Spaniel","",8,"Grande-Bretagne"],["Field Spaniel","",8,"Grande-Bretagne"],["Sussex Spaniel","",8,"Grande-Bretagne"],["Welsh Springer Spaniel","",8,"Grande-Bretagne"],["Kooikerhondje","Nederlandse Kooikerhondje",8,"Pays-Bas"],["Chien d'eau espagnol","Perro de agua español",8,"Espagne"],["Chien d'eau américain","American Water Spaniel",8,"États-Unis"],["Barbet","",8,"France"],["Chien d'eau irlandais","Irish Water Spaniel",8,"Irlande"],["Lagotto Romagnolo","",8,"Italie"],["Chien d'eau frison","Wetterhoun",8,"Pays-Bas"],["Chien d'eau portugais","Cão de água português",8,"Portugal"],
+["Bichon maltais","Maltese",9,"Bassin méditerranéen"],["Bichon à poil frisé","",9,"Belgique, France"],["Bichon havanais","",9,"Cuba"],["Bichon bolonais","Bolognese",9,"Italie"],["Coton de Tuléar","",9,"Madagascar"],["Petit chien lion","",9,"France"],["Caniche","",9,"France"],["Griffon belge","",9,"Belgique"],["Griffon bruxellois","",9,"Belgique"],["Petit brabançon","",9,"Belgique"],["Chien chinois à crête","Chinese Crested Dog",9,"Chine"],["Épagneul tibétain","Tibetan Spaniel",9,"Tibet (Chine)"],["Lhassa Apso","",9,"Tibet (Chine)"],["Shih Tzu","",9,"Tibet (Chine)"],["Terrier tibétain","Tibetan Terrier",9,"Tibet (Chine)"],["Chihuahua","Chihuahueño",9,"Mexique"],["Cavalier King Charles","Cavalier King Charles Spaniel",9,"Grande-Bretagne"],["King Charles","King Charles Spaniel",9,"Grande-Bretagne"],["Pékinois","Pekingese",9,"Chine"],["Épagneul japonais","Chin",9,"Japon"],["Épagneul nain continental","Papillon, Phalène",9,"Belgique, France"],["Petit chien russe","Russkiy Toy",9,"Russie"],["Kromfohrländer","",9,"Allemagne"],["Carlin","Pug",9,"Chine"],["Boston Terrier","",9,"États-Unis"],["Bouledogue français","",9,"France"],
+["Lévrier afghan","Afghan Hound",10,"Afghanistan"],["Saluki","",10,"Moyen-Orient"],["Barzoï","Russkaya Psovaya Borzaya",10,"Russie"],["Deerhound","",10,"Grande-Bretagne"],["Lévrier irlandais","Irish Wolfhound",10,"Irlande"],["Lévrier espagnol","Galgo español",10,"Espagne"],["Greyhound","",10,"Grande-Bretagne"],["Whippet","",10,"Grande-Bretagne"],["Lévrier hongrois","Magyar agár",10,"Hongrie"],["Levrette d'Italie","Piccolo Levriero Italiano",10,"Italie"],["Azawakh","",10,"Mali"],["Sloughi","",10,"Maroc"],["Lévrier polonais","Chart Polski",10,"Pologne"]
+];
+const C = [["Abyssin","court"],["American Bobtail","mixte"],["American Curl","mixte"],["American Shorthair","court"],["American Wirehair","court"],["Angora turc","long"],["Asian Longhair","long"],["Asian Shorthair","court"],["Balinais","long"],["Bengal","court"],["Bleu russe","court"],["Bombay","court"],["British Longhair","long"],["British Shorthair","court"],["Burmese","court"],["Burmese américain","court"],["Burmilla","court"],["Californian Rex","rex"],["Ceylan","court"],["Chartreux","court"],["Chausie","court"],["Cornish Rex","rex"],["Cymric","long"],["Devon Rex","rex"],["Donskoy","nu"],["European Shorthair","court"],["Exotic Shorthair","court"],["German Rex","rex"],["Havana Brown","court"],["Highland Fold","long"],["Highland Straight","long"],["Japanese Bobtail","mixte"],["Korat","court"],["Kurilian Bobtail","mixte"],["LaPerm","rex"],["Maine Coon","long"],["Mandarin","long"],["Manx","court"],["Mau égyptien","court"],["Munchkin","mixte"],["Nebelung","long"],["Norvégien","long"],["Ocicat","court"],["Oriental","court"],["Persan","long"],["Peterbald","nu"],["Pixiebob","mixte"],["Ragdoll","long"],["Sacré de Birmanie","long"],["Savannah","court"],["Scottish Fold","court"],["Scottish Straight","court"],["Selkirk Rex","rex"],["Selkirk Straight","mixte"],["Siamois","court"],["Sibérien","long"],["Singapura","court"],["Snowshoe","court"],["Sokoke","court"],["Somali","long"],["Sphynx","nu"],["Thaï","court"],["Tonkinois","mixte"],["Turc du Lac de Van","long"],["York Chocolat","long"]];
+const TOP_D = ["Berger australien","Golden Retriever","Labrador Retriever","Bouledogue français","Berger belge","Berger allemand","Cavalier King Charles","Teckel","Chihuahua","Yorkshire Terrier","Jack Russell Terrier","Border Collie","Shiba","Spitz allemand","Cocker anglais","Beagle","Épagneul breton","Caniche","Husky de Sibérie","Bouvier bernois","Dalmatien","Carlin","Whippet","Samoyède"];
+const TOP_C = ["Maine Coon","Sacré de Birmanie","Ragdoll","British Shorthair","Bengal","Persan","Chartreux","Siamois","Norvégien","Sibérien","Sphynx","Abyssin"];
+const size = (n) => { const l = n.length; return l <= 8 ? "14cqw" : l <= 14 ? "12cqw" : l <= 22 ? "10.5cqw" : l <= 32 ? "9cqw" : "8cqw"; };
+const dogs = D.map((r) => ({ name: r[0], cat: "g" + r[2], sub: (r[1] ? r[1] + " · " : "") + r[3], tag: "Groupe " + r[2], color: GROUPS[r[2]][1], size: size(r[0]), top: TOP_D.indexOf(r[0]) >= 0, rank: TOP_D.indexOf(r[0]), key: norm(r[0] + " " + r[1] + " " + r[3]) }));
+const cats = C.map((r) => ({ name: r[0], cat: r[1], sub: COATS[r[1]][0], tag: COATS[r[1]][0], color: COATS[r[1]][1], size: size(r[0]), top: TOP_C.indexOf(r[0]) >= 0, rank: TOP_C.indexOf(r[0]), key: norm(r[0]) }));
+const count = (list, id) => list.filter((b) => b.cat === id).length;
+const dogChips = [{ id: "top", label: "Incontournables", n: TOP_D.length }, { id: "all", label: "Toutes les races", n: dogs.length }].concat(Object.keys(GROUPS).map((g) => ({ id: "g" + g, label: GROUPS[g][0], n: count(dogs, "g" + g) })));
+const catChips = [{ id: "top", label: "Incontournables", n: TOP_C.length }, { id: "all", label: "Toutes les races", n: cats.length }].concat(Object.keys(COATS).map((k) => ({ id: k, label: COATS[k][0], n: count(cats, k) })));
+const shelf = [["Berger australien","#1E3B2C","48px"],["Maine Coon","#5A4632","56px"],["Bouledogue français","#6B2E3A","44px"],["Sacré de Birmanie","#5A4632","52px"],["Golden Retriever","#1F3A3D","50px"],["Bengal","#3B3F45","40px"],["Teckel","#4A3426","38px"],["Border Collie","#1E3B2C","46px"],["Ragdoll","#5A4632","50px"],["Whippet","#2B2B2B","40px"],["Persan","#5A4632","54px"],["Dalmatien","#4B4325","44px"],["Chartreux","#3B3F45","48px"],["Samoyède","#23324A","52px"]];
+
+document.getElementById("shelf").innerHTML = shelf.map((s) => '<div style="flex:0 0 auto;width:' + s[2] + ';height:320px;background:' + s[1] + ';box-shadow:inset 0 16px 0 -15px #D8BF8A,inset 0 -16px 0 -15px #D8BF8A;display:flex;align-items:center;justify-content:center"><span style="writing-mode:vertical-rl;transform:rotate(180deg);font-family:\'Bodoni Moda\',serif;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#D8BF8A;white-space:nowrap">' + esc(s[0]) + '</span></div>').join("");
+
+const st = { tab: "chiens", filter: "top", q: "" };
+const $ = (id) => document.getElementById(id);
+const input = $("recherche");
+
+function render() {
+  const list = st.tab === "chiens" ? dogs : cats;
+  const nq = norm(st.q.trim());
+  let items;
+  if (nq) items = list.filter((b) => b.key.indexOf(nq) >= 0);
+  else if (st.filter === "top") items = list.filter((b) => b.top).sort((a, b) => a.rank - b.rank);
+  else if (st.filter === "all") items = list.slice();
+  else items = list.filter((b) => b.cat === st.filter);
+  if (nq || st.filter !== "top") items.sort((a, b) => a.name.localeCompare(b.name, "fr"));
+  const chipsSrc = st.tab === "chiens" ? dogChips : catChips;
+
+  $("tabs").innerHTML = [["chiens", "Chiens", dogs.length], ["chats", "Chats", cats.length]].map((t) =>
+    '<button type="button" class="tab" data-tab="' + t[0] + '" aria-pressed="' + (st.tab === t[0]) + '">' + t[1] + '<small>' + t[2] + '</small></button>').join("");
+  $("chips").innerHTML = chipsSrc.map((c) =>
+    '<button type="button" class="chip" data-filter="' + c.id + '" aria-pressed="' + (!nq && c.id === st.filter) + '">' + esc(c.label) + '<span>' + c.n + '</span></button>').join("");
+  $("searchLabel").textContent = st.tab === "chiens" ? "Rechercher une race de chien" : "Rechercher une race de chat";
+  input.placeholder = st.tab === "chiens" ? "Berger, terrier, Allemagne..." : "Maine Coon, Persan...";
+  if (input.value !== st.q) input.value = st.q;
+  $("clear").hidden = !nq;
+  const current = chipsSrc.find((c) => c.id === st.filter);
+  $("resultTitle").textContent = nq ? "Résultats pour « " + st.q.trim() + " »" : (current ? current.label : "");
+  $("count").textContent = items.length + (items.length > 1 ? " races" : " race");
+  $("grid").innerHTML = items.map((b) =>
+    '<article class="card"><div class="cover" aria-hidden="true" style="background:' + b.color + '"><span class="m">THIRAMIN</span><span class="n" style="font-size:' + b.size + '">' + esc(b.name) + '</span><span class="t">' + esc(b.tag) + '</span></div>' +
+    '<div style="display:flex;flex-direction:column;gap:4px"><h3>' + esc(b.name) + '</h3><p>' + esc(b.sub) + '</p></div>' +
+    '<div class="row"><span style="font-size:13px;color:#6B655C">Prix à venir</span><a class="link" href="#sur-mesure">Découvrir</a></div></article>').join("");
+  $("grid").hidden = items.length === 0;
+  $("empty").hidden = items.length !== 0;
+  $("empty").style.display = items.length ? "none" : "flex";
+}
+
+$("tabs").addEventListener("click", (e) => { const b = e.target.closest("[data-tab]"); if (b) { st.tab = b.dataset.tab; st.filter = "top"; st.q = ""; render(); } });
+$("chips").addEventListener("click", (e) => { const b = e.target.closest("[data-filter]"); if (b) { st.filter = b.dataset.filter; st.q = ""; render(); } });
+input.addEventListener("input", () => { st.q = input.value; render(); });
+const clear = () => { st.q = ""; render(); input.focus(); };
+$("clear").addEventListener("click", clear);
+$("clear2").addEventListener("click", clear);
+document.querySelectorAll("[data-go]").forEach((a) => a.addEventListener("click", () => { st.tab = a.dataset.go; st.filter = "top"; st.q = ""; render(); }));
+render();
+})();
+</script>
+</body>
+</html>
